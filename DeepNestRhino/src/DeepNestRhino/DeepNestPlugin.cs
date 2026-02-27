@@ -1,6 +1,9 @@
+using System;
 using Rhino;
 using Rhino.PlugIns;
+using Rhino.UI;
 using DeepNestRhino.Core;
+using DeepNestRhino.UI;
 
 namespace DeepNestRhino
 {
@@ -30,6 +33,10 @@ namespace DeepNestRhino
 
         protected override LoadReturnCode OnLoad(ref string errorMessage)
         {
+            // Register the dockable panel
+            var panelType = typeof(DeepNestPanel);
+            Panels.RegisterPanel(this, panelType, "DeepNest", null);
+
             RhinoApp.WriteLine("DeepNest for Rhino loaded.");
             return LoadReturnCode.Success;
         }

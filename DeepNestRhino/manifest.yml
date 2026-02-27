@@ -1,0 +1,16 @@
+name: deepnest
+version: 1.0.0
+authors:
+  - DeepNest Contributors
+description: >
+  Nesting optimizer for laser cutting.
+  Arranges parts on sheets to minimize material waste
+  using genetic algorithm optimization and No-Fit Polygon placement.
+url: https://github.com/nicholasgasior/deepnest
+keywords:
+  - nesting
+  - laser cutting
+  - cnc
+  - bin packing
+  - optimization
+  - sheet metal
