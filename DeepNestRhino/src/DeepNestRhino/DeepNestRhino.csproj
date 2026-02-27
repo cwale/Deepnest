@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net48;net7.0-windows</TargetFrameworks>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <Title>DeepNest for Rhino</Title>
+    <Description>Nesting optimizer for laser cutting — arranges parts on sheets to minimize material waste</Description>
+    <Version>1.0.0</Version>
+    <Authors>DeepNest Contributors</Authors>
+    <RootNamespace>DeepNestRhino</RootNamespace>
+    <AssemblyName>DeepNestRhino</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RhinoCommon" Version="8.0.*" ExcludeAssets="runtime" />
+    <PackageReference Include="Clipper2" Version="1.3.*" />
+  </ItemGroup>
+
+</Project>
